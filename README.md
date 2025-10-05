@@ -5,6 +5,8 @@ This project is a simple Turtle Graphics Application built in Java (Swing).
 It allows users to draw shapes and patterns by controlling a “turtle” that moves around a virtual canvas.
 The turtle can draw by executing commands or using built-in shape buttons such as Square, Rectangle, and Zigzag.
 
+
+
 🧩 Class Structure
 🟦 Main
 
@@ -14,6 +16,7 @@ public static void main(String[] args) {
     Display a = new Display();
     a.run();
 }
+
 
 
 Launches the graphical window and initializes the turtle app.
@@ -30,6 +33,7 @@ A Canvas (drawing area)
 
 A control panel with buttons and a text input area
 
+
 Buttons:
 
 🟩 Run — Executes commands typed in the text area
@@ -42,6 +46,7 @@ Buttons:
 
 ▭ Rectangle — Draws a rectangle
 
+
 Example Commands for the “Run” button:
 
 FORWARD 100
@@ -49,6 +54,7 @@ LEFT 90
 FORWARD 100
 RIGHT 45
 FORWARD 70
+
 
 ✏️ Pen (in Turtle_app package)
 
@@ -66,6 +72,8 @@ reset() — Returns turtle to origin
 
 runProgram(String program) — Parses and runs text commands line-by-line
 
+
+
 Command Syntax:
 
 Command	Description
@@ -75,6 +83,7 @@ RIGHT X	Turn right by X degrees
 PENUP	Stop drawing
 PENDOWN	Start drawing
 🧱 Canvas (in Utility_Classes)
+
 
 A custom JPanel responsible for drawing lines.
 
@@ -88,13 +97,16 @@ Moves the origin (0,0) to the center of the window for easy drawing.
 
 Helper classes to represent the turtle’s path.
 
+
 MyPoint:
 
 Represents a single coordinate (x, y).
 
+
 Line:
 
 Represents a connection between two points (start, end).
+
 
 🧠 Object-Oriented Concepts Demonstrated
 
@@ -105,6 +117,7 @@ Composition: Pen uses Line and MyPoint objects to build shapes.
 Event Handling: Swing buttons use ActionListeners to trigger actions.
 
 Abstraction: GUI and logic are separated between Display, Pen, and Canvas.
+
 
 🏃 How to Run
 
@@ -119,6 +132,7 @@ src/
     ├── Canvas.java
     ├── Line.java
     └── MyPoint.java
+    
 
 
 Compile all files:
